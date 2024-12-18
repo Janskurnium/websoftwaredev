@@ -8,4 +8,4 @@ WORKDIR /app
 COPY . .
 
 # Allow network access and run the app
-CMD ["deno", "run", "--unstable-*", "--allow-net", "app-run.js"]
+CMD ["deno", "run", "--unstable", "--allow-net", "app-run.js"]

@@ -5,7 +5,7 @@ FROM denoland/deno:latest
 WORKDIR /app
 
 # Copy the application file to the container
-COPY app.js .
+COPY . .
 
 # Allow network access and run the app
-CMD ["run", "--allow-net", "--watch", "app.js"]
+CMD ["deno", "run", "--allow-net", "app-run.js"]
